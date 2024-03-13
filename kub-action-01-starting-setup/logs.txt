@@ -1,0 +1,227 @@
+
+==> Audit <==
+|--------------|---------------------|----------|--------------------|---------|---------------------|---------------------|
+|   Command    |        Args         | Profile  |        User        | Version |     Start Time      |      End Time       |
+|--------------|---------------------|----------|--------------------|---------|---------------------|---------------------|
+| update-check |                     | minikube | GOPAL-GURRAM\Gopal | v1.28.0 | 15 Feb 23 20:07 IST | 15 Feb 23 20:07 IST |
+| update-check |                     | minikube | GOPAL-GURRAM\Gopal | v1.28.0 | 22 Apr 23 17:22 IST | 22 Apr 23 17:22 IST |
+| update-check |                     | minikube | GOPAL-GURRAM\Gopal | v1.30.1 | 29 Apr 23 10:26 IST | 29 Apr 23 10:26 IST |
+| update-check |                     | minikube | GOPAL-GURRAM\Gopal | v1.30.1 | 06 Sep 23 15:25 IST | 06 Sep 23 15:25 IST |
+| update-check |                     | minikube | GOPAL-GURRAM\Gopal | v1.30.1 | 07 Sep 23 15:20 IST | 07 Sep 23 15:20 IST |
+| start        | --driver=virtualbox | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 11:24 IST |                     |
+| delete       |                     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 11:26 IST | 13 Mar 24 11:26 IST |
+| start        | --driver=hyperv     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 11:26 IST | 13 Mar 24 11:29 IST |
+| dashboard    |                     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 11:30 IST |                     |
+| delete       |                     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 11:42 IST | 13 Mar 24 11:42 IST |
+| start        | --driver=hyperv     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 12:20 IST |                     |
+| delete       |                     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 12:21 IST | 13 Mar 24 12:21 IST |
+| start        | --driver=hyperv     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 12:22 IST |                     |
+| start        | --driver=hyperv     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 12:26 IST |                     |
+| start        | --driver=hyperv     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 12:59 IST |                     |
+| delete       |                     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 13:00 IST | 13 Mar 24 13:00 IST |
+| start        | --driver=hyperv     | minikube | GOPAL-GURRAM\Gopal | v1.32.0 | 13 Mar 24 13:00 IST |                     |
+|--------------|---------------------|----------|--------------------|---------|---------------------|---------------------|
+
+
+==> Last Start <==
+Log file created at: 2024/03/13 13:00:15
+Running on machine: Gopal-Gurram
+Binary: Built with gc go1.21.3 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0313 13:00:15.870883   13972 out.go:296] Setting OutFile to fd 104 ...
+I0313 13:00:15.871473   13972 out.go:309] Setting ErrFile to fd 108...
+I0313 13:00:15.893815   13972 out.go:303] Setting JSON to false
+I0313 13:00:15.897856   13972 start.go:128] hostinfo: {"hostname":"Gopal-Gurram","uptime":22812,"bootTime":1710292203,"procs":321,"os":"windows","platform":"Microsoft Windows 11 Pro","platformFamily":"Standalone Workstation","platformVersion":"10.0.22631.3235 Build 22631.3235","kernelVersion":"10.0.22631.3235 Build 22631.3235","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"2467941f-86ec-40e8-98f5-a09506ff9d74"}
+W0313 13:00:15.897988   13972 start.go:136] gopshost.Virtualization returned error: not implemented yet
+I0313 13:00:15.900574   13972 out.go:177] 😄  minikube v1.32.0 on Microsoft Windows 11 Pro 10.0.22631.3235 Build 22631.3235
+I0313 13:00:15.904594   13972 notify.go:220] Checking for updates...
+I0313 13:00:15.905230   13972 driver.go:378] Setting default libvirt URI to qemu:///system
+I0313 13:00:17.173449   13972 out.go:177] ✨  Using the hyperv driver based on user configuration
+I0313 13:00:17.181389   13972 start.go:298] selected driver: hyperv
+I0313 13:00:17.181389   13972 start.go:902] validating driver "hyperv" against <nil>
+I0313 13:00:17.181389   13972 start.go:913] status for hyperv: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0313 13:00:17.181616   13972 start_flags.go:309] no existing cluster config was found, will generate one from the flags 
+I0313 13:00:17.229700   13972 start_flags.go:394] Using suggested 3000MB memory alloc based on sys=12163MB, container=0MB
+I0313 13:00:17.231335   13972 start_flags.go:913] Wait components to verify : map[apiserver:true system_pods:true]
+I0313 13:00:17.231857   13972 cni.go:84] Creating CNI manager for ""
+I0313 13:00:17.231857   13972 cni.go:158] "hyperv" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0313 13:00:17.231857   13972 start_flags.go:318] Found "bridge CNI" CNI - setting NetworkPlugin=cni
+I0313 13:00:17.231857   13972 start_flags.go:323] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:3000 CPUs:2 DiskSize:20000 VMDriver: Driver:hyperv HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\Gopal:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I0313 13:00:17.231857   13972 iso.go:125] acquiring lock: {Name:mk83f0076ede9d5e861b96beb0cdd59eadf531af Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0313 13:00:17.234510   13972 out.go:177] 👍  Starting control plane node minikube in cluster minikube
+I0313 13:00:17.237906   13972 preload.go:132] Checking if preload exists for k8s version v1.28.3 and runtime docker
+I0313 13:00:17.237906   13972 preload.go:148] Found local preload: C:\Users\Gopal\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4
+I0313 13:00:17.237906   13972 cache.go:56] Caching tarball of preloaded images
+I0313 13:00:17.238616   13972 preload.go:174] Found C:\Users\Gopal\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0313 13:00:17.238616   13972 cache.go:59] Finished verifying existence of preloaded tar for  v1.28.3 on docker
+I0313 13:00:17.239846   13972 profile.go:148] Saving config to C:\Users\Gopal\.minikube\profiles\minikube\config.json ...
+I0313 13:00:17.240000   13972 lock.go:35] WriteFile acquiring C:\Users\Gopal\.minikube\profiles\minikube\config.json: {Name:mk963cf0314435025947d37f1a9cace71d09c00d Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0313 13:00:17.240516   13972 start.go:365] acquiring machines lock for minikube: {Name:mkbb02210fd1c581603ceea17dd1cadfff5088c7 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0313 13:00:17.240516   13972 start.go:369] acquired machines lock for "minikube" in 0s
+I0313 13:00:17.241556   13972 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.32.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:3000 CPUs:2 DiskSize:20000 VMDriver: Driver:hyperv HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\Gopal:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:} &{Name: IP: Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0313 13:00:17.241609   13972 start.go:125] createHost starting for "" (driver="hyperv")
+I0313 13:00:17.246377   13972 out.go:204] 🔥  Creating hyperv VM (CPUs=2, Memory=3000MB, Disk=20000MB) ...
+I0313 13:00:17.246446   13972 start.go:159] libmachine.API.Create for "minikube" (driver="hyperv")
+I0313 13:00:17.246446   13972 client.go:168] LocalClient.Create starting
+I0313 13:00:17.246446   13972 main.go:141] libmachine: Reading certificate data from C:\Users\Gopal\.minikube\certs\ca.pem
+I0313 13:00:17.246446   13972 main.go:141] libmachine: Decoding PEM data...
+I0313 13:00:17.252415   13972 main.go:141] libmachine: Parsing certificate...
+I0313 13:00:17.253595   13972 main.go:141] libmachine: Reading certificate data from C:\Users\Gopal\.minikube\certs\cert.pem
+I0313 13:00:17.253595   13972 main.go:141] libmachine: Decoding PEM data...
+I0313 13:00:17.253595   13972 main.go:141] libmachine: Parsing certificate...
+I0313 13:00:17.254597   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive @(Get-Module -ListAvailable hyper-v).Name | Get-Unique
+I0313 13:00:17.683666   13972 main.go:141] libmachine: [stdout =====>] : Hyper-V
+
+I0313 13:00:17.683666   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:17.683666   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive @([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(([System.Security.Principal.SecurityIdentifier]::new("S-1-5-32-578")))
+I0313 13:00:18.184240   13972 main.go:141] libmachine: [stdout =====>] : True
+
+I0313 13:00:18.184240   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:18.184240   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive [Console]::OutputEncoding = [Text.Encoding]::UTF8; ConvertTo-Json @(Hyper-V\Get-VMSwitch|Select Id, Name, SwitchType|Where-Object {($_.SwitchType -eq 'External') -or ($_.Id -eq 'c08cb7b8-9b3c-408e-8e30-5e16a3aeb444')}|Sort-Object -Property SwitchType)
+I0313 13:00:19.982664   13972 main.go:141] libmachine: [stdout =====>] : [
+    {
+        "Id":  "c08cb7b8-9b3c-408e-8e30-5e16a3aeb444",
+        "Name":  "Default Switch",
+        "SwitchType":  1
+    }
+]
+
+I0313 13:00:19.982664   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:19.988080   13972 main.go:141] libmachine: Downloading C:\Users\Gopal\.minikube\cache\boot2docker.iso from file://C:/Users/Gopal/.minikube/cache/iso/amd64/minikube-v1.32.1-amd64.iso...
+I0313 13:00:21.568065   13972 main.go:141] libmachine: Creating SSH key...
+I0313 13:00:21.801694   13972 main.go:141] libmachine: Creating VM...
+I0313 13:00:21.801694   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive [Console]::OutputEncoding = [Text.Encoding]::UTF8; ConvertTo-Json @(Hyper-V\Get-VMSwitch|Select Id, Name, SwitchType|Where-Object {($_.SwitchType -eq 'External') -or ($_.Id -eq 'c08cb7b8-9b3c-408e-8e30-5e16a3aeb444')}|Sort-Object -Property SwitchType)
+I0313 13:00:22.935358   13972 main.go:141] libmachine: [stdout =====>] : [
+    {
+        "Id":  "c08cb7b8-9b3c-408e-8e30-5e16a3aeb444",
+        "Name":  "Default Switch",
+        "SwitchType":  1
+    }
+]
+
+I0313 13:00:22.935415   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:22.935415   13972 main.go:141] libmachine: Using switch "Default Switch"
+I0313 13:00:22.936473   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive @([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
+I0313 13:00:23.467323   13972 main.go:141] libmachine: [stdout =====>] : False
+
+I0313 13:00:23.467323   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:23.467556   13972 main.go:141] libmachine: Creating VHD
+I0313 13:00:23.467556   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\New-VHD -Path 'C:\Users\Gopal\.minikube\machines\minikube\fixed.vhd' -SizeBytes 20000MB -Fixed
+I0313 13:00:37.215774   13972 main.go:141] libmachine: [stdout =====>] : 
+
+ComputerName            : GOPAL-GURRAM
+Path                    : C:\Users\Gopal\.minikube\machines\minikube\fixed.vhd
+VhdFormat               : VHD
+VhdType                 : Fixed
+FileSize                : 20971520512
+Size                    : 20971520000
+MinimumSize             : 
+LogicalSectorSize       : 512
+PhysicalSectorSize      : 512
+BlockSize               : 0
+ParentPath              : 
+DiskIdentifier          : 4684BDF8-9B16-43AF-81EE-17B111A50D00
+FragmentationPercentage : 0
+Alignment               : 1
+Attached                : False
+DiskNumber              : 
+IsPMEMCompatible        : False
+AddressAbstractionType  : None
+Number                  : 
+
+
+
+
+I0313 13:00:37.215774   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:37.215774   13972 main.go:141] libmachine: Writing magic tar header
+I0313 13:00:37.216776   13972 main.go:141] libmachine: Writing SSH key tar header
+I0313 13:00:37.223470   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\Convert-VHD -Path 'C:\Users\Gopal\.minikube\machines\minikube\fixed.vhd' -DestinationPath 'C:\Users\Gopal\.minikube\machines\minikube\disk.vhd' -VHDType Dynamic -DeleteSource
+I0313 13:00:54.017294   13972 main.go:141] libmachine: [stdout =====>] : 
+I0313 13:00:54.017294   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:54.017294   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\New-VM minikube -Path 'C:\Users\Gopal\.minikube\machines\minikube' -SwitchName 'Default Switch' -MemoryStartupBytes 3000MB
+I0313 13:00:58.013963   13972 main.go:141] libmachine: [stdout =====>] : 
+Name     State CPUUsage(%!)(MISSING) MemoryAssigned(M) Uptime   Status             Version
+----     ----- ----------- ----------------- ------   ------             -------
+minikube Off   0           0                 00:00:00 Operating normally 11.0   
+
+
+
+I0313 13:00:58.013963   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:58.013963   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\Set-VMMemory -VMName minikube -DynamicMemoryEnabled $false
+I0313 13:00:58.697674   13972 main.go:141] libmachine: [stdout =====>] : 
+I0313 13:00:58.697674   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:58.697674   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\Set-VMProcessor minikube -Count 2
+I0313 13:00:59.357526   13972 main.go:141] libmachine: [stdout =====>] : 
+I0313 13:00:59.357526   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:00:59.357526   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\Set-VMDvdDrive -VMName minikube -Path 'C:\Users\Gopal\.minikube\machines\minikube\boot2docker.iso'
+I0313 13:01:00.324198   13972 main.go:141] libmachine: [stdout =====>] : 
+I0313 13:01:00.324198   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:01:00.324198   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\Add-VMHardDiskDrive -VMName minikube -Path 'C:\Users\Gopal\.minikube\machines\minikube\disk.vhd'
+I0313 13:01:01.427472   13972 main.go:141] libmachine: [stdout =====>] : 
+I0313 13:01:01.427472   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:01:01.427472   13972 main.go:141] libmachine: Starting VM...
+I0313 13:01:01.427472   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\Start-VM minikube
+I0313 13:01:03.868457   13972 main.go:141] libmachine: [stdout =====>] : 
+E0313 13:01:03.868457   13972 main.go:137] libmachine: [stderr =====>] : Hyper-V\Start-VM : 'minikube' failed to start.
+Unable to allocate 3000 MB of RAM: Insufficient system resources exist to complete the requested service. 
+(0x800705AA).
+'minikube' failed to start. (Virtual machine ID 58CCE9B0-6958-4041-946B-949B1D588F40)
+'minikube' is unable to allocate 3000 MB of RAM: Insufficient system resources exist to complete the 
+requested service. (0x800705AA). (Virtual machine ID 58CCE9B0-6958-4041-946B-949B1D588F40)
+At line:1 char:1
++ Hyper-V\Start-VM minikube
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Start-VM], VirtualizationException
+    + FullyQualifiedErrorId : Unspecified,Microsoft.HyperV.PowerShell.Commands.StartVM
+ 
+
+I0313 13:01:03.872478   13972 client.go:171] LocalClient.Create took 46.6255249s
+I0313 13:01:05.892319   13972 start.go:128] duration metric: createHost completed in 48.637059s
+I0313 13:01:05.892566   13972 start.go:83] releasing machines lock for "minikube", held for 48.6520504s
+W0313 13:01:05.892566   13972 start.go:691] error starting host: creating host: create: creating: exit status 1
+I0313 13:01:05.898255   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I0313 13:01:06.542402   13972 main.go:141] libmachine: [stdout =====>] : Off
+
+I0313 13:01:06.542402   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:01:06.542566   13972 stop.go:39] StopHost: minikube
+W0313 13:01:06.546571   13972 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0313 13:01:06.550278   13972 out.go:177] ✋  Stopping node "minikube"  ...
+I0313 13:01:06.557315   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I0313 13:01:07.140642   13972 main.go:141] libmachine: [stdout =====>] : Off
+
+I0313 13:01:07.140642   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:01:07.140642   13972 stop.go:79] host is in state Stopped
+I0313 13:01:07.143933   13972 main.go:141] libmachine: Stopping "minikube"...
+I0313 13:01:07.143933   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I0313 13:01:07.709552   13972 main.go:141] libmachine: [stdout =====>] : Off
+
+I0313 13:01:07.709552   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:01:07.709552   13972 stop.go:59] stop err: Machine "minikube" is already stopped.
+I0313 13:01:07.709552   13972 stop.go:62] host is already stopped
+W0313 13:01:08.722479   13972 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0313 13:01:08.725772   13972 out.go:177] 🔥  Deleting "minikube" in hyperv ...
+I0313 13:01:08.732029   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive ( Hyper-V\Get-VM minikube ).state
+I0313 13:01:09.335227   13972 main.go:141] libmachine: [stdout =====>] : Off
+
+I0313 13:01:09.335227   13972 main.go:141] libmachine: [stderr =====>] : 
+I0313 13:01:09.335227   13972 main.go:141] libmachine: [executing ==>] : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive Hyper-V\Remove-VM minikube -Force
+I0313 13:01:10.507613   13972 main.go:141] libmachine: [stdout =====>] : 
+I0313 13:01:10.507613   13972 main.go:141] libmachine: [stderr =====>] : 
+W0313 13:01:10.530330   13972 start.go:696] delete host: api remove: remove C:\Users\Gopal\.minikube\machines\minikube\id_rsa: The process cannot access the file because it is being used by another process.
+W0313 13:01:10.535865   13972 out.go:239] 🤦  StartHost failed, but will try again: creating host: create: creating: exit status 1
+I0313 13:01:10.535865   13972 start.go:706] Will try again in 5 seconds ...
+I0313 13:01:15.544967   13972 start.go:365] acquiring machines lock for minikube: {Name:mkbb02210fd1c581603ceea17dd1cadfff5088c7 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0313 13:01:15.544967   13972 start.go:369] acquired machines lock for "minikube" in 0s
+I0313 13:01:15.544967   13972 start.go:96] Skipping create...Using existing machine configuration
+I0313 13:01:15.544967   13972 fix.go:54] fixHost starting: 
+I0313 13:01:15.544967   13972 fix.go:56] fixHost completed within 0s
+I0313 13:01:15.544967   13972 start.go:83] releasing machines lock for "minikube", held for 0s
+W0313 13:01:15.548391   13972 out.go:239] 😿  Failed to start hyperv VM. Running "minikube delete" may fix it: error loading existing host. Please try running [minikube delete], then run [minikube start] again: filestore "minikube": open C:\Users\Gopal\.minikube\machines\minikube\config.json: The system cannot find the file specified.
+I0313 13:01:15.556277   13972 out.go:177] 
+W0313 13:01:15.558516   13972 out.go:239] ❌  Exiting due to GUEST_NOT_FOUND: Failed to start host: error loading existing host. Please try running [minikube delete], then run [minikube start] again: filestore "minikube": open C:\Users\Gopal\.minikube\machines\minikube\config.json: The system cannot find the file specified.
+W0313 13:01:15.559101   13972 out.go:239] 💡  Suggestion: minikube is missing files relating to your guest environment. This can be fixed by running 'minikube delete'
+W0313 13:01:15.559610   13972 out.go:239] 🍿  Related issue: https://github.com/kubernetes/minikube/issues/9130
+I0313 13:01:15.563405   13972 out.go:177] 
+
+
